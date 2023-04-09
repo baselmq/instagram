@@ -1,0 +1,140 @@
+.container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-areas:
+        "nav story account "
+        "nav main suggestions"
+        "nav main suggestions";
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: minmax(80px, auto);
+    padding: 40px 16px;
+}
+
+
+.logo img {
+    width: 110px;
+}
+
+.account {
+    grid-area: account;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.icon-nav {
+    position: fixed;
+    margin: 50px;
+}
+
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside {
+    grid-area: suggestions;
+}
+
+nav div img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+nav div {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.story {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+
+
+}
+
+.story-user {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
+}
+
+.story-user img {
+    border: 3px solid red;
+    background-color: blue;
+    border-radius: 100px;
+    width: 50px;
+}
+
+/* Post */
+.post {
+    display: grid;
+    height: 660px;
+    width: 470px;
+    grid-template-rows: auto 1fr auto auto;
+    margin: 20px 0 80px 0;
+}
+
+.post img {
+
+    width: 100%;
+
+}
+
+.post-story {
+    display: flex;
+    align-items: center;
+
+}
+
+.post-story img {
+    border: 3px solid red;
+    background-color: blue;
+    border-radius: 100px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.btn-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.right {
+    width: 25px;
+}
+
+.description div {
+    margin-top: 5px;
+}
+
+.description div:last-child {
+    color: #8e8e8e;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c6c6c6;
+
+}
+
+.aside {
+    display: flex;
+    align-items: center;
+}
+.aside .story-user {
+    margin-bottom: 5px;
+}
+.aside label {
+    margin-left: 20px;
+}
